@@ -20,7 +20,7 @@ class Funcionario {
   }
 }
 
-const funcionario = new Funcionario("Miguel", 3500, "28/01/2008");
+const funcionario = new Funcionario("Alice", 3500, "28/01/2008");
 funcionario.exibirDetalhes();
 
 class Gerente extends Funcionario {
@@ -37,7 +37,9 @@ class Gerente extends Funcionario {
     console.log(
       `Nome do funcionário é ${this.nome} seu salário é ${
         this.salario
-      } A sua data de admissão é ${this.dataAdmissao} o seu departamento é ${this.departamento} O seu bônus é ${this.calcularBonus()}`
+      } A sua data de admissão é ${this.dataAdmissao} o seu departamento é ${
+        this.departamento
+      } O seu bônus é ${this.calcularBonus()}`
     );
   }
 }
